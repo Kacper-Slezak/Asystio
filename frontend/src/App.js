@@ -145,6 +145,30 @@ function App() {
         }, 100); // Mały bufor
     };
 
+            // Tę funkcję możesz podpiąć pod przycisk "Zacznij od nowa"
+    async function resetChat() {
+        try {
+            const response = await fetch('/api/history', {
+                method: 'DELETE' // Ważna jest metoda DELETE
+            });
+
+            if (response.ok) {
+                console.log("Historia czatu wyczyszczona!");
+
+                    // Tutaj powinieneś również wyczyścić widok czatu w HTML
+                    // na przykład:
+                    // document.getElementById('chat-messages-container').innerHTML = '';
+
+                alert("Chat został zresetowany!");
+            } else {
+                console.error("Błąd podczas resetowania czatu.");
+                alert("Nie udało się zresetować czatu.");
+            }
+        } catch (error) {
+            console.error("Błąd sieci:", error);
+        }
+    }
+
     if (!browserSupportsSpeechRecognition) {
         return <div className="app-container">Twoja przeglądarka nie wspiera Speech-to-Text.</div>;
     }
