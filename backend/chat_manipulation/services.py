@@ -1,7 +1,10 @@
 import json
 import os
 from datetime import datetime
-from backend.config import HISTORY_FILE, MAX_HISTORY_LENGTH
+
+
+MAX_HISTORY_LENGTH = 10
+HISTORY_FILE = "history.json"
 
 def load_history():
     if not os.path.exists(HISTORY_FILE):
