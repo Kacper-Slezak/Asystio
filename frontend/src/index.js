@@ -5,7 +5,7 @@ import './index.css';
 
 import 'react-chat-elements/dist/main.css';
 
-import App from './App';
+import App from './App.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
