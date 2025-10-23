@@ -30,3 +30,11 @@ def add_to_history(sender: str, text: str):
     save_history(history)
     
     return new_message  
+
+def clear_history():
+    try:
+        save_history([])
+        return True
+    except Exception:
+        print("Error clearing history")
+        return False
