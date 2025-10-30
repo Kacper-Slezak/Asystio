@@ -47,7 +47,7 @@ Backend należy uruchomić jako pierwszy, aby frontend mógł się z nim połąc
 
 3.  **Aktywuj wirtualne środowisko:**
 
-      * Na Windows (CMD):
+      * Na Windows (CMD/PowerShell):
         ```bash
         .\venv\Scripts\activate
         ```
@@ -74,7 +74,7 @@ Backend należy uruchomić jako pierwszy, aby frontend mógł się z nim połąc
         ```bash
         export GROQ_API_KEY="TWOJ_KLUCZ_API_GROQ"
         ```
-      * Na Windows (PowerShall):
+      * Na Windows (PowerShell):
         ```bash
         $env:GROQ_API_KEY="TWOJ_KLUCZ_API_GROQ"
         ```
