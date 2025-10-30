@@ -74,6 +74,10 @@ Backend należy uruchomić jako pierwszy, aby frontend mógł się z nim połąc
         ```bash
         export GROQ_API_KEY="TWOJ_KLUCZ_API_GROQ"
         ```
+      * Na Windows (PowerShall):
+        ```bash
+        $env:GROQ_API_KEY="TWOJ_KLUCZ_API_GROQ"
+        ```
 
     *Uwaga: Aplikacja nie uruchomi się bez tego klucza.*
 
