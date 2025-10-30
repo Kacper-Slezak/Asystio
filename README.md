@@ -49,7 +49,7 @@ Backend należy uruchomić jako pierwszy, aby frontend mógł się z nim połąc
 
       * Na Windows (CMD/PowerShell):
         ```bash
-        .\venv\Scripts\activate
+        .venv\Scripts\activate
         ```
       * Na macOS/Linux (Bash):
         ```bash
